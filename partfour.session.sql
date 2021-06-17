@@ -1,0 +1,295 @@
+-- select count (*) from users;
+-- select Max(followers) from users;
+-- select * from users
+-- where followers = (select Max(followers) from users);
+-- select AVG(followers) from users;
+-- select *
+-- from users
+-- order BY login;
+-- select *
+-- from users
+-- order BY country;
+-- select *
+-- from users
+-- order BY email;
+-- select *
+-- from users
+-- where   login like '%as%';
+-- select *
+-- from users
+-- where   login like '%cg%';
+-- select *
+-- from users
+-- where   login like '%si%';
+-- select *
+-- from users
+-- where   login like '%am%';
+-- select *
+-- from users
+-- where   login like '%qwe%';
+-- select *
+-- from users
+-- where   login like '%er%';
+-- select *
+-- from users
+-- where   login like '%ka%';
+-- select *
+-- from users
+-- where   login like '%an%';
+-- select *
+-- from users
+-- where   login like '%lol';
+-- select *
+-- from users
+-- where   login like '%kan';
+-- select *
+-- from users
+-- where   login like '%ck';
+-- select *
+-- from users
+-- where   login like '%ie';
+-- select *
+-- from users
+-- where login like '%ig';
+-- select *
+-- from users
+-- where login like 'a%';
+-- select *
+-- from users
+-- where login like 'b%';
+-- select *
+-- from users
+-- where login like 'c%';
+-- select *
+-- from users
+-- where login like 'd%';
+-- select *
+-- from users
+-- where login like 'M%';
+-- select *
+-- from users
+-- where login like 'D%';
+-- select *
+-- from users
+-- where login like 'A%';
+select login,
+    profession,
+    followers
+from users
+where profession LIKE 'Senior%'
+    and country = 'Israel'
+order by followers desc
+limit 1;
+--  ,  
+-- ;
+-- select * from users order by followers DESC limit 10
+-- where country = 'Israel';
+--  profession = 'Senior Programmer' and 
+-- CREATE TABLE people(id Serial Primary key, names VARCHAR, lastname VARCHAR, email VARCHAR, phone VARCHAR);
+-- DROP TABLE people;
+-- CREATE TABLE client(id Serial Primary key, login VARCHAR, password VARCHAR);
+-- DROP TABLE client;
+-- insert into people (names, lastname, email, phone) values ('Celeste', 'Mahy', 'cmahy0@msn.com', '815-736-6379');
+-- insert into people (names, lastname, email, phone) values ('Udall', 'Churches', 'uchurches1@amazonaws.com', '168-800-9872');
+-- insert into people (names, lastname, email, phone) values ('Baxter', 'Jovasevic', 'bjovasevic2@nytimes.com', '346-890-4516');
+-- insert into people (names, lastname, email, phone) values ('Sherwin', 'Esmonde', 'sesmonde3@amazon.com', '554-822-3794');
+-- insert into people (names, lastname, email, phone) values ('Benedetto', 'Ghidotti', 'bghidotti4@symantec.com', '750-571-0318');
+-- insert into people (names, lastname, email, phone) values ('Ozzy', 'Golborn', 'ogolborn5@fotki.com', '190-318-5730');
+-- insert into people (names, lastname, email, phone) values ('Wilbur', 'Jobson', 'wjobson6@moonfruit.com', '952-203-9582');
+-- insert into people (names, lastname, email, phone) values ('Yelena', 'Cowitz', 'ycowitz7@squidoo.com', '707-975-6531');
+-- insert into people (names, lastname, email, phone) values ('Ida', 'Bolgar', 'ibolgar8@networkadvertising.org', '500-486-4618');
+-- insert into people (names, lastname, email, phone) values ('Darby', 'Scourge', 'dscourge9@wisc.edu', '616-661-6628');
+-- insert into people (names, lastname, email, phone) values ('Doreen', 'Vanyukhin', 'dvanyukhina@stanford.edu', '837-629-8886');
+-- insert into people (names, lastname, email, phone) values ('Regina', 'Laytham', 'rlaythamb@cornell.edu', '751-270-2151');
+-- insert into people (names, lastname, email, phone) values ('Isabelita', 'Bellini', 'ibellinic@jalbum.net', '462-141-7538');
+-- insert into people (names, lastname, email, phone) values ('Toinette', 'Sivorn', 'tsivornd@springer.com', '436-135-3227');
+-- insert into people (names, lastname, email, phone) values ('Alikee', 'Silk', 'asilke@wikispaces.com', '344-291-9464');
+-- insert into people (names, lastname, email, phone) values ('Martita', 'Rishman', 'mrishmanf@github.com', '686-429-8433');
+-- insert into people (names, lastname, email, phone) values ('Barr', 'Libbe', 'blibbeg@engadget.com', '143-208-5947');
+-- insert into people (names, lastname, email, phone) values ('Uta', 'Figures', 'ufiguresh@addthis.com', '922-189-7436');
+-- insert into people (names, lastname, email, phone) values ('Clara', 'Grigoriscu', 'cgrigoriscui@cnbc.com', '755-753-2165');
+-- insert into people (names, lastname, email, phone) values ('Chaddie', 'Vango', 'cvangoj@walmart.com', '857-495-3476');
+-- insert into people (names, lastname, email, phone) values ('Jannelle', 'Attwill', 'jattwillk@taobao.com', '323-572-0941');
+-- insert into people (names, lastname, email, phone) values ('Zed', 'Jzak', 'zjzakl@webmd.com', '448-681-5292');
+-- insert into people (names, lastname, email, phone) values ('Joseph', 'Farney', 'jfarneym@wordpress.com', '182-114-3028');
+-- insert into people (names, lastname, email, phone) values ('Garvy', 'Haggith', 'ghaggithn@ow.ly', '767-646-5671');
+-- insert into people (names, lastname, email, phone) values ('Sybilla', 'Batkin', 'sbatkino@cbsnews.com', '688-444-8863');
+-- insert into people (names, lastname, email, phone) values ('Mycah', 'Stoaks', 'mstoaksp@homestead.com', '850-634-3906');
+-- insert into people (names, lastname, email, phone) values ('Abie', 'Surmon', 'asurmonq@who.int', '189-667-5017');
+-- insert into people (names, lastname, email, phone) values ('Thedric', 'Nutting', 'tnuttingr@ifeng.com', '414-840-8989');
+-- insert into people (names, lastname, email, phone) values ('Sly', 'Devons', 'sdevonss@shutterfly.com', '973-503-0194');
+-- insert into people (names, lastname, email, phone) values ('Ashlin', 'Spridgeon', 'aspridgeont@census.gov', '150-845-4687');
+-- insert into people (names, lastname, email, phone) values ('Roseanna', 'McFadden', 'rmcfaddenu@paginegialle.it', '850-542-4122');
+-- insert into people (names, lastname, email, phone) values ('Johnny', 'Hazeman', 'jhazemanv@indiegogo.com', '134-211-9784');
+-- insert into people (names, lastname, email, phone) values ('Jordain', 'Elwill', 'jelwillw@foxnews.com', '179-910-9506');
+-- insert into people (names, lastname, email, phone) values ('Sybyl', 'Franceschelli', 'sfranceschellix@ucsd.edu', '858-983-1978');
+-- insert into people (names, lastname, email, phone) values ('Michel', 'Creer', 'mcreery@blog.com', '592-193-7558');
+-- insert into people (names, lastname, email, phone) values ('Lizzy', 'Aldwick', 'laldwickz@telegraph.co.uk', '442-113-4739');
+-- insert into people (names, lastname, email, phone) values ('Sidoney', 'Stoyell', 'sstoyell10@goo.ne.jp', '784-907-7496');
+-- insert into people (names, lastname, email, phone) values ('Dolph', 'Stooke', 'dstooke11@wordpress.org', '774-461-8765');
+-- insert into people (names, lastname, email, phone) values ('Madeleine', 'Tallant', 'mtallant12@addthis.com', '149-218-6215');
+-- insert into people (names, lastname, email, phone) values ('Iormina', 'Huriche', 'ihuriche13@a8.net', '459-101-6671');
+-- insert into people (names, lastname, email, phone) values ('Gar', 'Ricard', 'gricard14@t-online.de', '257-214-8956');
+-- insert into people (names, lastname, email, phone) values ('Irvin', 'Long', 'ilong15@yale.edu', '581-960-9937');
+-- insert into people (names, lastname, email, phone) values ('Bryn', 'Slixby', 'bslixby16@shop-pro.jp', '829-847-5972');
+-- insert into people (names, lastname, email, phone) values ('Carroll', 'Hammonds', 'chammonds17@noaa.gov', '628-752-6863');
+-- insert into people (names, lastname, email, phone) values ('Antone', 'Paulitschke', 'apaulitschke18@illinois.edu', '286-320-1813');
+-- insert into people (names, lastname, email, phone) values ('Vic', 'Moscone', 'vmoscone19@businessinsider.com', '947-734-1766');
+-- insert into people (names, lastname, email, phone) values ('Sibbie', 'Attril', 'sattril1a@abc.net.au', '283-922-4182');
+-- insert into people (names, lastname, email, phone) values ('Leonanie', 'Beauman', 'lbeauman1b@ning.com', '692-737-5283');
+-- insert into people (names, lastname, email, phone) values ('Leeanne', 'Iglesias', 'liglesias1c@dion.ne.jp', '451-747-5566');
+-- insert into people (names, lastname, email, phone) values ('Zaria', 'Pariso', 'zpariso1d@dailymotion.com', '979-638-1411');
+-- insert into people (names, lastname, email, phone) values ('Othello', 'Nicholas', 'onicholas1e@drupal.org', '287-594-7492');
+-- insert into people (names, lastname, email, phone) values ('Allister', 'Camamile', 'acamamile1f@wired.com', '646-391-6228');
+-- insert into people (names, lastname, email, phone) values ('Leshia', 'Grannell', 'lgrannell1g@imdb.com', '774-311-4063');
+-- insert into people (names, lastname, email, phone) values ('Dinnie', 'Lorans', 'dlorans1h@prweb.com', '162-815-7513');
+-- insert into people (names, lastname, email, phone) values ('Stefania', 'Buie', 'sbuie1i@unicef.org', '142-269-6613');
+-- insert into people (names, lastname, email, phone) values ('Giulio', 'Pressnell', 'gpressnell1j@epa.gov', '801-117-4196');
+-- insert into people (names, lastname, email, phone) values ('Irv', 'Teodorski', 'iteodorski1k@xinhuanet.com', '355-102-9250');
+-- insert into people (names, lastname, email, phone) values ('Loree', 'Christauffour', 'lchristauffour1l@wordpress.org', '141-755-6599');
+-- insert into people (names, lastname, email, phone) values ('Aluin', 'Madill', 'amadill1m@pen.io', '776-144-4840');
+-- insert into people (names, lastname, email, phone) values ('Weidar', 'McShea', 'wmcshea1n@e-recht24.de', '783-613-1337');
+-- insert into people (names, lastname, email, phone) values ('Aloisia', 'Vaar', 'avaar1o@oracle.com', '422-795-0453');
+-- insert into people (names, lastname, email, phone) values ('Kelbee', 'O''Flaverty', 'koflaverty1p@wired.com', '784-314-1394');
+-- insert into people (names, lastname, email, phone) values ('Chiquita', 'Hellin', 'chellin1q@discovery.com', '555-763-3087');
+-- insert into people (names, lastname, email, phone) values ('Floria', 'Royste', 'froyste1r@vistaprint.com', '245-696-6725');
+-- insert into people (names, lastname, email, phone) values ('Biron', 'Shillan', 'bshillan1s@digg.com', '171-602-2457');
+-- insert into people (names, lastname, email, phone) values ('Teddy', 'Welberry', 'twelberry1t@ihg.com', '409-653-1091');
+-- insert into people (names, lastname, email, phone) values ('Dorotea', 'Tolossi', 'dtolossi1u@uiuc.edu', '704-715-1100');
+-- insert into people (names, lastname, email, phone) values ('Nanete', 'Boughey', 'nboughey1v@photobucket.com', '546-456-7171');
+-- insert into people (names, lastname, email, phone) values ('Raphaela', 'Swinfen', 'rswinfen1w@webs.com', '838-965-5884');
+-- insert into people (names, lastname, email, phone) values ('Audrey', 'Masey', 'amasey1x@wiley.com', '441-691-4016');
+-- insert into people (names, lastname, email, phone) values ('Derek', 'Cookley', 'dcookley1y@opensource.org', '446-886-4312');
+-- insert into people (names, lastname, email, phone) values ('Gretta', 'Menel', 'gmenel1z@clickbank.net', '854-867-1883');
+-- insert into people (names, lastname, email, phone) values ('Octavia', 'Currin', 'ocurrin20@dion.ne.jp', '340-227-5338');
+-- insert into people (names, lastname, email, phone) values ('Leonerd', 'Kippin', 'lkippin21@simplemachines.org', '623-109-2748');
+-- insert into people (names, lastname, email, phone) values ('Duffy', 'Melly', 'dmelly22@rakuten.co.jp', '825-643-2105');
+-- insert into people (names, lastname, email, phone) values ('Lea', 'Slessar', 'lslessar23@ucoz.com', '276-289-9360');
+-- insert into people (names, lastname, email, phone) values ('Tabbie', 'Garroway', 'tgarroway24@vistaprint.com', '243-635-5761');
+-- insert into people (names, lastname, email, phone) values ('Antonietta', 'Mullineux', 'amullineux25@ameblo.jp', '449-784-1240');
+-- insert into people (names, lastname, email, phone) values ('Fleming', 'MacConneely', 'fmacconneely26@theatlantic.com', '191-258-0768');
+-- insert into people (names, lastname, email, phone) values ('Mureil', 'Tyers', 'mtyers27@canalblog.com', '859-281-3046');
+-- insert into people (names, lastname, email, phone) values ('Aloisia', 'Delamar', 'adelamar28@ovh.net', '640-940-2350');
+-- insert into people (names, lastname, email, phone) values ('Sal', 'Kelsell', 'skelsell29@storify.com', '273-311-1072');
+-- insert into people (names, lastname, email, phone) values ('Barr', 'Wannop', 'bwannop2a@etsy.com', '902-614-0947');
+-- insert into people (names, lastname, email, phone) values ('Walsh', 'Fibbit', 'wfibbit2b@cloudflare.com', '900-498-7416');
+-- insert into people (names, lastname, email, phone) values ('Felecia', 'Lundbeck', 'flundbeck2c@github.io', '183-355-5248');
+-- insert into people (names, lastname, email, phone) values ('Garvin', 'Wilkes', 'gwilkes2d@goo.gl', '978-476-5824');
+-- insert into people (names, lastname, email, phone) values ('Fergus', 'Branscomb', 'fbranscomb2e@buzzfeed.com', '464-100-6165');
+-- insert into people (names, lastname, email, phone) values ('Mathew', 'Hovie', 'mhovie2f@wikipedia.org', '816-660-3110');
+-- insert into people (names, lastname, email, phone) values ('Lucian', 'Luck', 'lluck2g@over-blog.com', '577-154-8330');
+-- insert into people (names, lastname, email, phone) values ('Crichton', 'Campion', 'ccampion2h@clickbank.net', '379-236-5971');
+-- insert into people (names, lastname, email, phone) values ('Ethyl', 'Perone', 'eperone2i@cbc.ca', '673-908-8055');
+-- insert into people (names, lastname, email, phone) values ('Carleton', 'Reeder', 'creeder2j@auda.org.au', '155-308-2481');
+-- insert into people (names, lastname, email, phone) values ('Edyth', 'Scardafield', 'escardafield2k@spotify.com', '650-672-5268');
+-- insert into people (names, lastname, email, phone) values ('Christophe', 'Scalera', 'cscalera2l@narod.ru', '885-924-4772');
+-- insert into people (names, lastname, email, phone) values ('Adams', 'Saph', 'asaph2m@nps.gov', '141-528-8399');
+-- insert into people (names, lastname, email, phone) values ('Guenna', 'Hamber', 'ghamber2n@cargocollective.com', '362-956-6795');
+-- insert into people (names, lastname, email, phone) values ('Clem', 'Fishley', 'cfishley2o@nasa.gov', '874-390-1350');
+-- insert into people (names, lastname, email, phone) values ('Donny', 'Prydden', 'dprydden2p@google.pl', '215-991-3294');
+-- insert into people (names, lastname, email, phone) values ('Kennedy', 'Gettone', 'kgettone2q@angelfire.com', '428-557-3200');
+-- SELECT * from people;
+-- insert into client (login, password) values ('klavens0', 'uTiGzkn');
+-- insert into client (login, password) values ('blavigne1', 'gmrgYYoVdBve');
+-- insert into client (login, password) values ('lcrickett2', 'VdzKeoA');
+-- insert into client (login, password) values ('csquire3', 'hI4rTxod');
+-- insert into client (login, password) values ('fflatley4', '4pVQMuvxW1N');
+-- insert into client (login, password) values ('gvedyasov5', 'AnE1vY1DhP');
+-- insert into client (login, password) values ('mserginson6', 'ULKCsEvcB');
+-- insert into client (login, password) values ('arubinowitsch7', 'AakQ3Jr');
+-- insert into client (login, password) values ('aglowacha8', 'PgMD78D0');
+-- insert into client (login, password) values ('iwilstead9', 'S7qdn5ijPmX');
+-- insert into client (login, password) values ('tbullenea', '6dSWKIbPGP');
+-- insert into client (login, password) values ('rspancockb', 'I51YX7');
+-- insert into client (login, password) values ('afriedankc', 'MgIJu0kIzU');
+-- insert into client (login, password) values ('bminesd', 'ZRIt0uwzxq');
+-- insert into client (login, password) values ('pknottleye', '0choGgnMGJ');
+-- insert into client (login, password) values ('mbidnallf', 'k82aC5ZJ6');
+-- insert into client (login, password) values ('bbalsellieg', 'vG6Ziork4');
+-- insert into client (login, password) values ('alambertonh', 'NS4N9DKJ');
+-- insert into client (login, password) values ('umaffullii', 'a1YWAbseiyYa');
+-- insert into client (login, password) values ('sjanatkaj', 'NX806u');
+-- insert into client (login, password) values ('msybbek', '8pA2Cgqq');
+-- insert into client (login, password) values ('ncumberpatchl', 'yYIDSL');
+-- insert into client (login, password) values ('slowym', 'oaGwOWh');
+-- insert into client (login, password) values ('cjudkinsn', '3ZeEFi4');
+-- insert into client (login, password) values ('kpoolmano', '1h97Al');
+-- insert into client (login, password) values ('dcasollap', '7TPxtF');
+-- insert into client (login, password) values ('amatthaiq', 'zoPJhSpRVGT0');
+-- insert into client (login, password) values ('mmaywoodr', 'Yhbt8JBDqj');
+-- insert into client (login, password) values ('cdybles', '9507qf');
+-- insert into client (login, password) values ('apepit', '5QnYNn');
+-- insert into client (login, password) values ('smattesu', 'JNO6MHwZ');
+-- insert into client (login, password) values ('kgepheartv', 'smidgHPD');
+-- insert into client (login, password) values ('ftimmermannw', 'JYIUPHSIUEQP');
+-- insert into client (login, password) values ('tbrambillx', '5f7FRGf');
+-- insert into client (login, password) values ('tcantoy', 'E7QwZuDhwpPX');
+-- insert into client (login, password) values ('sphetheanz', 'VHrE80JUIkT');
+-- insert into client (login, password) values ('szorer10', '4vIzIB0k');
+-- insert into client (login, password) values ('blanchberry11', '7VP19UeY');
+-- insert into client (login, password) values ('ahemms12', '2TmGr51m');
+-- insert into client (login, password) values ('mbaldock13', 'ssIQlEuIp');
+-- insert into client (login, password) values ('sgheorghe14', 'ihi92YpM');
+-- insert into client (login, password) values ('mspofford15', 'HFjDAiXj');
+-- insert into client (login, password) values ('laiskrigg16', 'tz2L3I');
+-- insert into client (login, password) values ('rscarsbrook17', 'dYipv77e');
+-- insert into client (login, password) values ('jmatton18', 'AgpobM44h');
+-- insert into client (login, password) values ('crankcom19', 'BYMgz4gkR');
+-- insert into client (login, password) values ('mbridgstock1a', 'uNN4Nyh');
+-- insert into client (login, password) values ('mjohn1b', 'fiF8v7');
+-- insert into client (login, password) values ('eartin1c', 'AeAV0bIOmxrs');
+-- insert into client (login, password) values ('abaggarley1d', 'uNpfcyFgIB');
+-- insert into client (login, password) values ('hboodle1e', '0gEoHOf');
+-- insert into client (login, password) values ('esaunier1f', 'KwzbCCL');
+-- insert into client (login, password) values ('blambeth1g', 'dpGTRjGr');
+-- insert into client (login, password) values ('eprozillo1h', 'nWzfds4B8YD');
+-- insert into client (login, password) values ('dkington1i', 'fkdFnIipvpmF');
+-- insert into client (login, password) values ('bsweetmore1j', 'QfsP6e2pwr');
+-- insert into client (login, password) values ('rcaldeiro1k', 'YT1Lst9s0g');
+-- insert into client (login, password) values ('hcasham1l', 'UHcKJwTUI7');
+-- insert into client (login, password) values ('cshepton1m', 'ahFZMpW');
+-- insert into client (login, password) values ('lpickavance1n', 'vlFTnj6Ckr');
+-- insert into client (login, password) values ('rcockarill1o', 'kjkd1p3Uo');
+-- insert into client (login, password) values ('mheaselgrave1p', 'pdzokGa');
+-- insert into client (login, password) values ('cdalgarno1q', 'rluFP9k');
+-- insert into client (login, password) values ('goffa1r', 'rbTcpt');
+-- insert into client (login, password) values ('mperulli1s', 'QIFC9r7W');
+-- insert into client (login, password) values ('bsotheby1t', 'Aa7Bzx3a');
+-- insert into client (login, password) values ('probertazzi1u', 'QsiUSyKdE8R');
+-- insert into client (login, password) values ('smcguff1v', 'FWGDxecM5s42');
+-- insert into client (login, password) values ('dvardie1w', 'pd80gsuhwqe');
+-- insert into client (login, password) values ('wdunford1x', 'kw0PQJAlDz');
+-- insert into client (login, password) values ('tminney1y', 'kuDQxe0');
+-- insert into client (login, password) values ('lvittet1z', 'lXLRrfMNc');
+-- insert into client (login, password) values ('gmedgwick20', '1bDSxx');
+-- insert into client (login, password) values ('dlanglands21', 'BbQiFy');
+-- insert into client (login, password) values ('jguerriero22', 'eVceVt');
+-- insert into client (login, password) values ('jlemarquis23', 'IaJONlciu7G');
+-- insert into client (login, password) values ('psawers24', 'bUjVIC4zV');
+-- insert into client (login, password) values ('evenes25', 'RW4ktX');
+-- insert into client (login, password) values ('fjeaycock26', '8RssRnhFchYn');
+-- insert into client (login, password) values ('vyegorshin27', 'Q72GPw');
+-- insert into client (login, password) values ('tmcgruar28', '85CeMSXvt');
+-- insert into client (login, password) values ('jdybell29', 'zq9FX22');
+-- insert into client (login, password) values ('nmarchetti2a', 'QO7rUM');
+-- insert into client (login, password) values ('bcattermoul2b', 'FEPLw8Wdbzx');
+-- insert into client (login, password) values ('lbein2c', 'ijfm0jh2nJP');
+-- insert into client (login, password) values ('rspilisy2d', '2Lk6F9NXK2n');
+-- insert into client (login, password) values ('cfrancklyn2e', 'NsJD0NRlxfRb');
+-- insert into client (login, password) values ('dhalifax2f', 'Nv8NUKdgtXsD');
+-- insert into client (login, password) values ('vgother2g', 'tUYzfQOD0vlO');
+-- insert into client (login, password) values ('kpaulson2h', 'THnZs91H');
+-- insert into client (login, password) values ('jdomelow2i', 'kniEuKwe');
+-- insert into client (login, password) values ('leakeley2j', 'IVcKO21');
+-- insert into client (login, password) values ('rbudibent2k', 'psU1Qn5sBX0');
+-- insert into client (login, password) values ('owhitefoot2l', 'UslXzdj5EOr');
+-- insert into client (login, password) values ('cduker2m', 'MUAHyg');
+-- insert into client (login, password) values ('cpurcer2n', 'LuGBzuU3');
+-- insert into client (login, password) values ('eblaxlande2o', 'DgDsaB7Gcfk');
+-- insert into client (login, password) values ('amcclune2p', 'CaShSqx96Cq');
+-- insert into client (login, password) values ('jleipelt2q', 'ejAXlEiI');
+-- insert into client (login, password) values ('gstratton2r', 'NMycsNKWBV');
+-- select * from people WHERE id BETWEEN 5 and 10
+-- ALTER TABLE client ADD COLUMN created_at TIMESTAMP with Time ZONE DEFAULT CURRENT_TIMESTAMP;
+-- SELECT * FROM
+-- SELECT * FROM client;
